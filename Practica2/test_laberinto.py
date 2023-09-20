@@ -128,3 +128,23 @@ laberinto = [ #Laberinto con solución 20x50
 ]
 inicio = (1, 0)
 fin = (20, 48)
+
+laberinto = [ #Laberinto con recorrido en todas las casillas
+    ['E', '0', '0', '0'],
+    ['0', '0', '0', '0'],
+    ['0', '0', '0', '0'],
+    ['0', '0', '0', 'S'],
+]
+
+inicio = (3, 3)
+fin = (0, 0)
+
+laberinto = [ #Laberinto con solo dos caminos posibles
+    ['S', '0', '0', '0'],
+    ['0', '1', '1', '0'],
+    ['0', '1', '1', '0'],
+    ['0', '0', '0', 'E']
+]
+
+inicio = (0, 0)
+fin = (3, 3)
