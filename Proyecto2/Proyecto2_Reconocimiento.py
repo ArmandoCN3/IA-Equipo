@@ -7,7 +7,7 @@ import mahotas
 
 
 # Parámetros
-direccion = '/content/drive/MyDrive/shapes2'
+direccion = '/content/drive/MyDrive/imagen'
 os.chdir(direccion)
 tamano_img = 60
 
@@ -44,7 +44,7 @@ momentos_zernike = np.array([calcular_momentos_zernike(imagen, 21, 8) for imagen
 import csv
 
 # Guardar los resultados en archivos CSV - Hu Moments
-with open('P2_hu_moments.csv', 'w', newline='') as csvfile:
+with open('hu_moments.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
 
     # Escribir el encabezado
@@ -60,7 +60,7 @@ with open('P2_hu_moments.csv', 'w', newline='') as csvfile:
 print("Resultados de Hu guardados en archivo CSV.")
 
 # Guardar los resultados en archivos CSV - Zernike Moments
-with open('P2_zernike_moments.csv', 'w', newline='') as csvfile:
+with open('zernike_moments.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
 
     # Escribir el encabezado
