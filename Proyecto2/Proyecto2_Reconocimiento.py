@@ -7,7 +7,7 @@ import mahotas
 
 
 # Parámetros
-direccion = '/content/drive/MyDrive/imagen'
+direccion = '/content/drive/MyDrive/Imagenes'
 os.chdir(direccion)
 tamano_img = 60
 
